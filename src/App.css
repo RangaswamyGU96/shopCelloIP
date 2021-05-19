@@ -36,3 +36,63 @@
     transform: rotate(360deg);
   }
 }
+.header{
+  padding: 20px 0;     
+  border-bottom: 2px solid #a1cce4;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: 600;
+
+}
+
+.active {
+  color: rgb(52, 101, 235) !important;
+  text-decoration: underline;
+  font-size: 17px;
+  font-weight: 400;
+}
+.navlink a{
+margin:0 20px;
+color: black;
+text-decoration: none;
+font-size: 17px;
+font-weight: 600;
+}
+
+.navlink img{
+height: 45px;
+width: 45px;
+}
+
+
+.heading-title{
+padding-top:10px;
+}
+
+.main-buttons{
+  text-align: right;
+}
+
+#Addtocart{
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.Formcontainer{
+  width:60%;
+  margin:0 auto;
+}
+
+@media screen and (max-width:767px){
+  .Formcontainer{
+    width:100%;
+  }
+}
+
+button:focus{
+  outline-color: none !important;
+  outline: none !important;
+}

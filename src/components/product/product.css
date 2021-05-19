@@ -1,0 +1,45 @@
+.product-card {
+    padding: 20px;
+    border: 1px solid #a1cce4 !important;
+    border-radius: 10px;  
+    margin: 10px auto;
+    background: white;
+  }
+  .product-card:hover { 
+      box-shadow: 4px 4px 8px 0px #a1cce4;
+      cursor: pointer;  
+    }
+  .product-name {
+    display: block;
+  }
+  .product-title {
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .product-item {
+    font-size: 16px;  
+  }
+  
+  h6 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+ 
+  
+  .product-card {
+    position: relative;
+    height: 90%;
+  } 
+
+  button{
+      padding: 10px;
+      margin: 0 10px;
+  }
+  .product-detail{
+      margin:10px 0;
+  }
+  
