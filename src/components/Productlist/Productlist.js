@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Product from '../product/product';
-import Cart from '../cart/cart';
+ 
 import { Route, Router } from 'react-router';
 
 
@@ -196,14 +196,15 @@ class Productlist extends Component {
         const productlist = this.state.Products.map((prd, index) => {
             return <Product name={prd.productname}
                 id={prd.id}
+                key={index}
                 price={prd.Price}
                 delete={() => this.Deleteproducthandler(prd.id)}
                 addtocart={() => this.Addproducttocarthandler(prd.id)}
                 edit={() => this.EditproductHandler(prd.id)} />
         })
 
-        const Cartlist = this.state.Cart.map((item) => {
-            return <tr> <td>{item.productname}</td>
+        const Cartlist = this.state.Cart.map((item,index) => {
+            return <tr> <td key={index}>{item.productname}</td>
                 <td>{item.Price}</td>
                 <td><button onClick={() => { this.removefromcartHandler(item.id) }} className="btn btn-danger">Remove</button></td></tr>
         })
